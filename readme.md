@@ -8,7 +8,7 @@ Game to play with AI in a classic game "paper stone scissor".
 
 ### Links 
 
-You can play in game here [Link]()
+You can play the game here [Link](https://domdzia.github.io/paper-stone-scissor/)
 
 
 ### Built with 
