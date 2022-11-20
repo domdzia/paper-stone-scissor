@@ -1,0 +1,108 @@
+:root{
+    --font: 'Noto Serif', serif;
+    --white: #F8F8F8; 
+    --light-gray: #E8E4E1;
+    --brown: #C4AEA3; 
+    --light-beige: #F2E6DA; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: var(--white);
+    font-family: var(--font);
+}
+
+.boxes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 30px;
+}
+
+img{
+    cursor: pointer;
+    
+}
+
+.click{
+    border: 20px solid #001B48;
+}
+
+.results{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 12rem;
+    border: 1px solid #C4AEA3;
+
+}
+
+.results h1{
+    font-size: 3.5rem;
+    margin-bottom: 1.3rem;
+}
+
+.score-box div{
+    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
+}
+
+.choices-box div{
+    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
+}
+
+.my-choice span, .computer-choice span{
+    margin-left: 10px;
+    color: #4063a0;
+}
+
+@media (max-width: 1000px) {
+    .boxes{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        margin-top: 15px;
+    }
+
+    img{
+        width: 140px;
+        height: 140px;
+    }
+
+    .click{
+        border: 15px solid #001B48;
+    }
+
+    .ai-click{
+        border: 15px solid red;
+    }
+
+    .results{
+        flex-direction: row;
+        margin-top: 6rem;
+
+    }
+
+    .results h1{
+        font-size: 1.5rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .score-box div{
+        font-size: 1rem;
+    }
+    
+    .choices-box div{
+        font-size: 1rem;
+    }
+
+
+}
