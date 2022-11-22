@@ -5,6 +5,7 @@ const aiChoiceText = document.querySelector(".computer-choice span")
 let wins = document.querySelector(".wins span");
 let loses = document.querySelector(".loses span");
 let totalSum = document.querySelector(".total span");
+let spanResult = document.querySelector(".result-text")
 
 // Variables 
 let myChoice = "";
@@ -48,10 +49,16 @@ function computerChoice () {
 function showResult () {
     if(myChoice === "paper" && aiChoice === "stone" || myChoice === "stone" && aiChoice === "scissor" || myChoice === "scissor" && aiChoice === "paper"){
         wins.innerHTML++;
+        spanResult.innerText = "You win!:)"
+        spanResult.style.color = "green"
     } else if(myChoice === aiChoice){
+        spanResult.innerText = "Draw";
+        spanResult.style.color = "blue";
         return;
     } else{
         loses.innerHTML++;
+        spanResult.innerText = "You lost :("
+        spanResult.style.color = "red"
     }
 }
 

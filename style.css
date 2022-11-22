@@ -19,10 +19,19 @@ html{
 
 .boxes{
     display: flex;
-    flex-direction: row;
     justify-content: center;
     margin-top: 2rem;
     gap: 30px;
+}
+
+.who-win{ 
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 2rem;
+}
+
+.who-win span{
+    font-size: 2rem;
 }
 
 img{
@@ -38,7 +47,7 @@ img{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-top: 12rem;
+    margin-top: 7rem;
     border: 1px solid #C4AEA3;
 
 }
