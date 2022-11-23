@@ -5,7 +5,8 @@ const aiChoiceText = document.querySelector(".computer-choice span")
 let wins = document.querySelector(".wins span");
 let loses = document.querySelector(".loses span");
 let totalSum = document.querySelector(".total span");
-let spanResult = document.querySelector(".result-text")
+let spanResult = document.querySelector(".result-text");
+const button = document.querySelector("button")
 
 // Variables 
 let myChoice = "";
@@ -62,6 +63,15 @@ function showResult () {
     }
 }
 
+button.addEventListener("click", () => {
+    wins.innerHTML = 0;
+    spanResult.innerHTML = "";
+    loses.innerHTML = 0;
+    totalSum.innerHTML = 0;
+    aiChoiceText.innerHTML = "";
+    myChoiceText.innerHTML = "";
+    gameElements.forEach(elem => elem.classList.remove("click"))
+})
 
 
 gameElements.forEach(item => item.addEventListener("click", choiceHands))
